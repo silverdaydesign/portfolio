@@ -1,1 +1,150 @@
-hello!!!123
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Silverday design</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>SILVER DAY DESIGN</h1>
+								<p>If you just need a small and simple website right now you are in the right place.</p><p><a href="#contact">Get in touch ...</a></p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#landing">Landing Page</a></li>
+								<li><a href="#brouchure">Simple Page</a></li>
+								<li><a href="#wordpress">WordPress site</a></li>
+								
+								<li><a href="#portfolio">Portfolio</a></li>
+								<li><a href="#contact">Contact Us</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="landing">
+								<h2 class="major">Landing Page</h2>
+								<span class="image main"><img src="images/pic01.png" alt="" /></span>
+
+								<p>Are you looking for a way to make your online presence more professional and effective? A landing page can be a powerful tool to help you achieve this goal.</p>
+								<p>A landing page is a single web page that is designed specifically to convert visitors into customers or clients. It provides a clear and concise overview of your business, products or services and provides a simple way for visitors to take action, such as making a purchase or contacting you.</p>
+							</article>
+
+						<!-- Work -->
+							<article id="brouchure">
+								<h2 class="major">Simple page</h2>
+								<p>Just opening your business or begining to build your online presence? Or just need to publish some straight forward information? </p>
+								<span class="image main"><img src="images/pic02.png" alt="" /></span>
+								<p>Are you in search of a way to effectively present your products or services to the world? A brochure website can be the solution you need.</p>
+								<span class="image main"><img src="images/pic02.png" alt="" /></span>
+                                <p>A brochure website serves as an online catalog that provides a comprehensive overview of your business to potential customers. It showcases what you have to offer and helps you reach a wider audience.</p>
+							</article>
+
+						<!-- About -->
+							<article id="wordpress">
+								<h2 class="major">About</h2>
+								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+							</article>
+
+						<!-- Portfolio -->
+						<article id="portfolio">
+							<span class="image main"><a href="../flover/index.html"><img src="images/pic02.png" alt="" /></a></span>
+							
+							<span class="image main"><a href="../coming_soon/index.html"><img src="images/pic01.png" alt="" /></a></span>
+
+						</article>
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<form  id="form">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email"  />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" rows="4"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" id="submit" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								  
+								</form>
+
+							</article>
+
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">Sometimes all you need is very simple.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+	
+		<script>
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbxvk33aJLh_Rr2ZJ3O66JgVJVY8z1Rj0Et3Sgh_O2RmxhoV_Mx1TnsaqZ0bbbWE9_wCNQ/exec'
+			const form = document.querySelector('#form')
+			const btn = document.querySelector('#submit')
+		
+		
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			 
+			  
+		
+			  console.log(form)
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+				.then(response => { 
+					 
+					/*alert('Success!', response)*/ })
+				.catch(error => {
+
+					/*lert('Error!', error.message)*/})
+			})
+		</script>
+			 
+			 		<script src="assets/js/jquery.min.js"></script>
+					 <script src="assets/js/browser.min.js"></script>
+					 <script src="assets/js/breakpoints.min.js"></script>
+					 <script src="assets/js/util.js"></script>
+					 <script src="assets/js/main.js"></script>
+	</body>
+</html>
